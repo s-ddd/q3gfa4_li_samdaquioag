@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = prompt("Enter the length of the first side.");
+        var b = prompt("Enter the length of the second side.");
+        var c = prompt("Enter the length of the third side.");
+        function triangleIdentifier() {
+            let verdict;
+            if (isNaN(a) || isNaN(b) || isNaN(c)) {
+                verdict = "Invalid input: One or more inputs are not numerical.";
+            } else if (a==b && b==c) {
+                verdict = "The triangle is Equilateral.";
+            } else if (a!==b && b!==c && a!==c) {
+                verdict = "The triangle is Scalene.";
+            } else {
+                verdict = "The triangle is Isosceles.";
+            }
+            return verdict;
+        }
+        var itstwitternotX = triangleIdentifier(a,b,c);
+        window.alert(itstwitternotX);
+    </script>
+</body>
+</html>
